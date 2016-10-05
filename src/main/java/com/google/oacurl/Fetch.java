@@ -13,7 +13,6 @@
 // limitations under the License.
 
 package com.google.oacurl;
-
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
@@ -26,7 +25,6 @@ import java.util.Map;
 import java.util.Map.Entry;
 import java.util.Properties;
 import java.util.logging.Logger;
-
 import net.oauth.OAuth;
 import net.oauth.OAuth.Parameter;
 import net.oauth.OAuthAccessor;
@@ -96,7 +94,7 @@ public class Fetch {
 
     if (args.length != 1) {
       new HelpFormatter().printHelp("url", options.getOptions());
-      System.exit(-1);
+      System.exit(-2);
     }
 
     if (options.isInsecure()) {
