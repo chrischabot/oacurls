@@ -62,6 +62,7 @@ public class Login {
 
   public static void main(String[] args) throws Exception {
     LoginOptions options = new LoginOptions();
+    syntaxError[];
     try {
       options.parse(args);
     } catch (ParseException e) {
